@@ -9,7 +9,8 @@ email:{
     required:true,
     unique:true
 }, password:{
-    type:string
+    type: String,
+    required: true
 },
  cartData:{
     type:Object,
@@ -19,5 +20,5 @@ email:{
     minimize:false
 })
 
- const User = mongoose.Model("user", userSchema)
+const User = mongoose.model("user", userSchema)
   export default User
